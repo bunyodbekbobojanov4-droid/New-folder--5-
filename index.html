@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7fb">
+    <meta name="description" content="MobilBozor — smartfonlarni qulay narxda xarid qiling.">
+    <title>MobilBozor — smartfonlar do‘koni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>🚚 Toshkent bo‘ylab bepul yetkazib berish — 500 000 so‘mdan boshlab</span>
+        <a href="#benefits">Yordam va aloqa <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-main">
+        <a class="brand" href="#" aria-label="MobilBozor bosh sahifasi">
+          <span class="brand-mark" aria-hidden="true">m</span>
+          <span>mobil<span class="brand-accent">bozor</span></span>
+        </a>
+        <form class="search" id="search-form" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Telefon modelini qidiring..." aria-label="Telefon modelini qidiring">
+          <button type="submit">Qidirish</button>
+        </form>
+        <button class="cart-button" id="open-cart" type="button" aria-label="Savatchani ochish">
+          <span class="cart-icon" aria-hidden="true">🛍</span>
+          <span class="cart-label">Savatcha</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+      <nav class="category-nav" aria-label="Asosiy menyu">
+        <div class="container nav-inner">
+          <a class="nav-link active" href="#catalog">Barcha telefonlar</a>
+          <a class="nav-link" href="#catalog" data-nav-category="Apple">Apple</a>
+          <a class="nav-link" href="#catalog" data-nav-category="Samsung">Samsung</a>
+          <a class="nav-link" href="#catalog" data-nav-category="Xiaomi">Xiaomi</a>
+          <a class="nav-link" href="#catalog" data-nav-category="Boshqa">Boshqa brendlar</a>
+          <a class="nav-link nav-sale" href="#catalog" data-nav-category="Chegirmalar">⚡ Chegirmalar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" aria-label="Asosiy taklif">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Yangi avlod. Sizga yaqin.</span>
+          <h1>O‘zingizga mos<br>telefonni <span>toping.</span></h1>
+          <p>Eng sara smartfonlar, halol narxlar va qulay to‘lov — bari bir joyda.</p>
+          <a class="primary-button" href="#catalog">Katalogni ko‘rish <span aria-hidden="true">↗</span></a>
+          <div class="hero-social-proof">
+            <div class="avatar-stack" aria-hidden="true"><i>👨🏻</i><i>👩🏽</i><i>👨🏿</i></div>
+            <span><strong>12 000+</strong> mamnun xaridor</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-glow"></div>
+          <span class="hero-spark spark-one">✳</span>
+          <span class="hero-spark spark-two">✦</span>
+          <div class="hero-note"><span>✦</span><div><strong>Bugun xarid qiling</strong><small>Bo‘lib to‘lash imkoniyati</small></div></div>
+          <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=950&q=85" alt="Zamonaviy smartfon" fetchpriority="high">
+          <span class="hero-pill">−15% <small>gacha</small></span>
+        </div>
+        <div class="hero-pagination" aria-hidden="true"><span></span><i></i><i></i></div>
+      </section>
+
+      <section class="benefit-strip container" id="benefits" aria-label="Xarid afzalliklari">
+        <div class="benefit"><span class="benefit-icon">🚚</span><div><strong>Tez yetkazib berish</strong><small>24 soat ichida eshigingizgacha</small></div></div>
+        <div class="benefit"><span class="benefit-icon">🛡️</span><div><strong>Rasmiy kafolat</strong><small>Har bir mahsulotga 1 yil</small></div></div>
+        <div class="benefit"><span class="benefit-icon">💳</span><div><strong>Qulay to‘lov</strong><small>12 oygacha foizsiz bo‘lib to‘lash</small></div></div>
+        <div class="benefit"><span class="benefit-icon">↩</span><div><strong>Oson qaytarish</strong><small>14 kun ichida muammosiz</small></div></div>
+      </section>
+
+      <section class="catalog-section container" id="catalog">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">SIZ UCHUN TANLADIK</span>
+            <h2>Ommabop telefonlar <span class="heading-spark">✳</span></h2>
+          </div>
+          <a class="text-link" href="#product-grid">Barchasini ko‘rish <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="filter-list" role="group" aria-label="Brend bo‘yicha filtrlash">
+            <button class="filter-chip selected" data-category="Barchasi" type="button">Barchasi</button>
+            <button class="filter-chip" data-category="Apple" type="button">Apple</button>
+            <button class="filter-chip" data-category="Samsung" type="button">Samsung</button>
+            <button class="filter-chip" data-category="Xiaomi" type="button">Xiaomi</button>
+            <button class="filter-chip" data-category="Boshqa" type="button">Boshqa</button>
+          </div>
+          <label class="sort-control">Saralash:
+            <select id="sort-select" aria-label="Mahsulotlarni saralash">
+              <option value="popular">Ommabopligi</option>
+              <option value="price-asc">Narxi: arzondan</option>
+              <option value="price-desc">Narxi: qimmatdan</option>
+              <option value="rating">Reytingi</option>
+            </select>
+          </label>
+        </div>
+        <div class="results-line" id="results-line" aria-live="polite"></div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span>⌕</span>
+          <h3>Telefon topilmadi</h3>
+          <p>Boshqa nom bilan qidirib ko‘ring yoki filtrlarni o‘zgartiring.</p>
+          <button class="secondary-button" id="reset-filters" type="button">Filtrlarni tozalash</button>
+        </div>
+      </section>
+
+      <section class="newsletter container">
+        <div><span class="section-kicker">BIZ BILAN QOLING</span><h2>Yaxshi takliflar — pochta qutingizda.</h2><p>Yangi mahsulotlar va maxsus chegirmalardan birinchilardan bo‘lib xabardor bo‘ling.</p></div>
+        <form id="newsletter-form"><label class="visually-hidden" for="email-input">Elektron pochta</label><input id="email-input" type="email" placeholder="Sizning emailingiz" required><button type="submit">Obuna bo‘lish <span aria-hidden="true">→</span></button></form>
+        <span class="newsletter-decoration" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">m</span><span>mobil<span class="brand-accent">bozor</span></span></a>
+        <p>Texnologiya sizga yaqinroq.</p>
+        <span>© 2025 MobilBozor. Barcha huquqlar himoyalangan.</span>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-header"><div><span class="section-kicker">XARIDLARINGIZ</span><h2 id="cart-title">Savatcha <span id="drawer-count">(0)</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Savatchani yopish">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>🛍</span><strong>Savatchangiz hozircha bo‘sh</strong><p>Yoqtirgan telefoningizni tanlang va savatchaga qo‘shing.</p></div>
+      <div class="cart-footer" id="cart-footer"><div><span>Jami</span><strong id="cart-total">0 so‘m</strong></div><button class="checkout-button" id="checkout-button" type="button">Buyurtma berish <span>→</span></button><small>🔒 Xavfsiz to‘lov</small></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
